@@ -1,6 +1,6 @@
 # AIoT_Group_1
 
-# ICT720 projects
+# ICT720 project
 
 ## Group 1
 ### Project brief
