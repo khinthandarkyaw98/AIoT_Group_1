@@ -1,5 +1,4 @@
 # AIoT_Group_1
-# ICT720 learning-by-doing
 
 # ICT720 projects
 
@@ -7,9 +6,9 @@
 ### Project brief
 
 ### Objectives
-1. To implement a waste segregation system with an object detection camera
-2. To create a database for the point based reward for different user
-3. To build a web-based point rewarding system
+1. To implement **a waste segregation system** with an object detection camera
+2. To create a database for the **point based reward** for different users
+3. To build a **web interface** for point rewarding system
 
 ## User stories and acceptance criteria
 1. As a **Student Affair Unit**, we want to **know which student threw trash properly** so that **we can reward that student**.
@@ -58,12 +57,6 @@ By proceeding this project, we can acquire the following impacts:
    * Dual-processor with RP2040
    * LED 135x240
 
-
-
-## Objectives
-* Learn **concepts** related to AIoT software.
-* Practice AIoT software development **skills** and **tools**.
-* Experience team software development using a **case study**.
 
 ## Scope
 1. Concepts: 
