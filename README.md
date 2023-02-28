@@ -8,7 +8,7 @@
 
 ### Objectives
 1. To implement a waste segregation system with an object detection camera
-2. To create a database for the point based rewared for different user
+2. To create a database for the point based reward for different user
 3. To build a web-based point rewarding system
 
 ## User stories and acceptance criteria
