@@ -1,33 +1,31 @@
-# AIoT_Group_1
-
-# ICT720 project
+# Waste Segragation with Point-based Reward System for Smart & Green Campus
+## ICT720 project
 
 ## Group 1
 ### Project brief
 
 ### Objectives
-1. To implement **a waste segregation system** with an object detection camera
-2. To create a database for the **point based reward** for different users
-3. To build a **web interface** for point rewarding system
+1. To implement **a trash segragation system** with an object detection camera
+2. To create a database for the **point-based reward system** for different users
+3. To build a **web interface** for reward & exchange system
 
 ## User stories and acceptance criteria
 1. As a **Student Affair Unit**, we want to **know which student threw trash properly** so that **we can reward that student**.
-   * Scenario: **student threw trash**, given **student is in the database**, when **student threw bottles in the bottle bin**, then **POINTS will be rewarded**. 
-   * Scenario: **student threw trash**, given **student is in the database**, when **student threw other types of trash into both of the bins**, then **POINTS will be reducted**.
+   * Scenario: **Point Reward**, given **student is in the database**, when **student threw bottles in the bottle bin**, then **POINTS will be rewarded**. 
+   * Scenario: **Point Deduct**, given **student is in the database**, when **student threw other types of trash into both of the bins**, then **POINTS will be deducted**.
 2. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**.
-   * Scenario: **student query**, given **he/she is in the database**, when **student is queried**, then **POINTS of that student is responsed**.
+   * Scenario: **individual POINTs query**, given **he/she is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
 3. As a **Reward Center**, we want to **know how many points the student received** so that **we can give a proper reward to the student**.
-   * Scenario: **student**, given **he/she came to cash out**, when **they have enough POINTS**, then **the reward is given**.
-   * Scenario: **student**, given **he/she left**, when **the reward is given**, then **the POINTS will be reduced**.
+   * Scenario: **Reward Giving**, given **students have enough POINTS**, when **they came to cash out**, then **the reward is given**.
+   * Scenario: **Cashed Out**, given **students have cashed out**, when **the reward is given**, then **the POINTS will be used**.
 
 ## Impacts of the project
 By proceeding this project, we can acquire the following impacts:
-   1. Reduction in littering: By rewarding people for throwing trash in designated bins, the reward point system can motivate individuals to dispose of waste properly, 
-      reducing littering in public spaces. 
-   3. Increased recycling rates: The reward point system can encourage people to separate recyclable materials from non-recyclable waste, leading to an increase in           recycling rates.
-   4. Reduced waste generation: As people become more conscious of the environmental impact of waste, they may reduce their overall waste generation, leading to a           reduction in the amount of waste that ends up in landfills or incinerators.
-   5. Environmental conservation: Proper waste management conserves natural resources and prevents pollution, while a reward point system for throwing trash fosters         community ownership and responsibility while preventing pollution.
-   6. Economic benefits:  Proper waste management can also create economic benefits by reducing costs associated with waste disposal, promoting resource conservation,       and generating revenue through recycling and waste-to-energy initiatives.
+   1. Reduction in littering: By rewarding student for throwing trash in designated bins, the reward point system can motivate individuals to dispose of waste properly,while preventing pollution. 
+   3. Increased recycling rates: The reward point system can encourage student to separate recyclable materials from non-recyclable waste, leading to an increase in recycling rates.
+   4. Reduced waste generation: As student become more conscious of the environmental impact of waste, they may reduce their overall waste generation, leading to a reduction in the amount of waste that ends up in landfills or incinerators.
+   5. Environmental conservation: Proper waste management conserves natural resources and prevents pollution, while a reward point system for throwing trash fosters community ownership and responsibility.
+   6. Economic benefits:  Proper waste management can also create economic benefits by reducing costs associated with waste disposal, promoting resource conservation, and generating revenue through recycling and waste-to-energy initiatives.
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
