@@ -16,7 +16,7 @@
    * Scenario: **student threw trash**, given **student is in the database**, when **student threw other types of trash into both of the bins**, then **POINTS will be reducted**.
 2. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**.
    * Scenario: **student query**, given **he/she is in the database**, when **student is queried**, then **POINTS of that student is responsed**.
-3. As a **Reward Center**, we want to **know how many points the student received** so that **we can give proper reward to the student**.
+3. As a **Reward Center**, we want to **know how many points the student received** so that **we can give a proper reward to the student**.
    * Scenario: **student**, given **he/she came to cash out**, when **they have enough POINTS**, then **the reward is given**.
    * Scenario: **student**, given **he/she left**, when **the reward is given**, then **the POINTS will be reduced**.
 
