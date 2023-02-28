@@ -38,7 +38,7 @@ By proceeding this project, we can acquire the following impacts:
 6. Hrang Kap Lian (hrangkap.l@live.ku.th)
 
 ### Hardware
-![Picture of group 1 hardware](/images/HW_group_1.jpg)
+![Picture of group 1 hardware](https://github.com/khinthandarkyaw98/ict720-project/blob/main/images/HW_group_1.jpg)
 1. [ESP32-S3-Box](https://github.com/espressif/esp-box) (Espressif ESP32-S3-Box)
    * USB serial
    * LCD 240x320: ILI9342C
