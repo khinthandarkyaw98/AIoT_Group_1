@@ -15,6 +15,8 @@
    * Scenario: **Point Deduct**, given **student is in the database**, when **student threw other types of trash into both of the bins**, then **POINTS will be deducted**.
 2. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**.
    * Scenario: **individual POINTs query**, given **he/she is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
+
+### **WE ONLY NEED 2 USER STORIES**
 3. As a **Reward Center**, we want to **know how many points the student received** so that **we can give a proper reward to the student**.
    * Scenario: **Reward Giving**, given **students have enough POINTS**, when **they came to cash out**, then **the reward is given**.
    * Scenario: **Cashed Out**, given **students have cashed out**, when **the reward is given**, then **the POINTS will be used**.
