@@ -46,7 +46,7 @@ For the headware sequence diagram the **BLE scanner will scan MAC addresses**, t
 ![IoT software stack](image/hw_sequence_diagram.png)
 
 For the software sequence diagram ?????????
-![IoT software stack](image/sw_sequence_diagram.png)
+![IoT software stack](image/sw_sequence_diagram.jpg)
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
