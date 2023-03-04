@@ -43,7 +43,7 @@ Software system consists of three software stacks for **BLE scanner & RaspberryP
 ![IoT software stack](image/stack_diagram.png)
 
 For the sequence diagram the **BLE scanner will scan MAC addresses**, the **RaspberryPiCamera will detect objects**, and **MQTT will send MAC addresses and corresponding POINTS** to the server.
-![IoT software stack](image/stack_diagram.png)
+![IoT software stack](image/hw_sequence_diagram.png)
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
