@@ -37,6 +37,11 @@ By proceeding this project, we can acquire the following impacts:
    5. Environmental conservation: Proper waste management conserves natural resources and prevents pollution, while a reward point system for throwing trash fosters community ownership and responsibility.
    6. Economic benefits:  Proper waste management can also create economic benefits by reducing costs associated with waste disposal, promoting resource conservation, and generating revenue through recycling and waste-to-energy initiatives.
 
+## Software architecture and behaviors
+### US1 tag&object_detection
+Software system consists of three software stacks for **BLE scanner & RaspberryPi**, **tag collector & object detector**, and **mobile UI**.
+![IoT software stack](image/stack_diagram.png)
+
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
 2. Wetu Vexo (m6522040622@g.SIIT.tu.ac.th)
