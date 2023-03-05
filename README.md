@@ -42,10 +42,10 @@ By proceeding this project, we can acquire the following impacts:
 Software system consists of three software stacks for **BLE scanner & RaspberryPi**, **tag collector & object detector**, and **mobile UI**.
 ![IoT software stack](image/stack_diagram.png)
 
-For the headware sequence diagram the **BLE scanner will scan MAC addresses**, the **RaspberryPiCamera will detect objects**, and **MQTT will send MAC addresses and corresponding POINTS** to the server.
+For the hardware sequence diagram the **BLE scanner will scan MAC addresses**, the **RaspberryPiCamera will detect objects**, and **MQTT will send MAC addresses and corresponding POINTS** to the server.
 ![IoT software stack](image/hw_sequence_diagram.png)
 
-For the software sequence diagram ?????????
+For the software sequence diagram, **the web app scans the student's phone MAC address**, **requests an account creation with it on the cloud server**, and **validates the student's data in the database**, responding step-by-step to the request.
 ![IoT software stack](image/sw_sequence_diagram.jpg)
 
 ### Members
