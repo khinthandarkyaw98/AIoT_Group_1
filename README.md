@@ -10,9 +10,12 @@
 3. To build a **web interface** for reward & exchange system
 
 ## User stories and acceptance criteria
-1. As a **Student Affair Unit**, we want to **know which student threw trash properly** so that **we can reward that student**. Furthermore, we want to **know how many points the students received** so that **we can give a proper reward to the students & notify the students immediately**.
+1. As a **Student Affair Unit**, we want to **know which student threw trash properly** so that **we can reward that student**.
    * Scenario: **Point Reward**, given **student is in the database**, when **student threw bottles in the bottle bin**, then **POINTS will be rewarded & notified**.
    * Scenario: **Point Deduction**, given **student is in the database**, when **student threw other types of trash into both of the bins**, then **POINTS will be deducted & notified**.
+
+2. As a **Student Affair Unit**, we want to **know how many points the students received** so that **we can give a proper reward to the students & notify the students immediately**.
+   * Scenario: **Reward Notification**, given **student threw the trash**, when **they threw the trash**, then **the POINTS are notified**.
    * Scenario: **Reward Given**, given **students have enough POINTS**, when **they came to cash out**, then **the reward is given**.
    
      | POINTS      | Baht        |
@@ -24,7 +27,7 @@
    * For example, given **students have 50 POINTS**, when **they came to cash out**, then **1 bottle of water is given**.
    * Scenario: **Cashed Out**, given **students have cashed out**, when **the reward is given**, then **the POINTS will be used**.
    
-2. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**. I want to **exchange POINTS** with my friends.
+3. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**. I want to **exchange POINTS** with my friends.
    * Scenario: **individual POINTS query**, given **he/she is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
    * Scenario: **POINTS Transfer**, given **student A transfers POINTS to student B's account**, when **POINTS are transfered**, then **student A's POINTS will be transfered & reduced**.
    * Scenario: **POINTS Receive**, given **student A transfers POINTS to student B's account**, when **POINTS are received**, then **student B will receive POINTS & POINTS will be added**.
