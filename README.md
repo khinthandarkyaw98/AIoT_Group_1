@@ -1,4 +1,4 @@
-# Waste Segragation with Point-based Reward System for Smart & Green Campus
+# Recycling Rewards: A Point-based Reward System with Recycling Incentives for Smart and Green Campus
 ## ICT720 project
 
 ## Group 1
