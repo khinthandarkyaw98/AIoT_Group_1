@@ -90,6 +90,8 @@ For the software sequence diagram, the **Web app scans the student's phone MAC a
 3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
 4. Case study: MarTech using BLE beacon.
 
+![System Overview](https://github.com/khinthandarkyaw98/ict720-project/blob/main/images/SystemOverview.png)
+
 
 ## System requirements
 ### Things layer:
