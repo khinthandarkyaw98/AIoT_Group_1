@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
+<body>
+
+  <h2> Recycling Rewards System</h2>
+
+  <form>
+    <div class="form-group ">
+      <label for="username">User Name</label>
+      <input type="username" class="form-control form-control-sm" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control form-control-sm" id="password">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="login" class="btn btn-primary">Login</button>
+  </form>
+
+</body>
+</html>
