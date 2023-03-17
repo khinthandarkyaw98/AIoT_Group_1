@@ -1,37 +1,47 @@
-from django.shortcuts import render,HttpResponse,redirect
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate,login,logout
-from django.contrib.auth.decorators import login_required
-from rest_framework.parsers import JSONParser
-from django.http.response import JsonResponse
+from django.db import models
 
-from . models import Student
-from . serializers import StudentSerializer
+# Create your models here.
 
-def loginPage(request):
-    if request.method=='POST':
-        username=request.POST.get('username')
-        pass1=request.POST.get('password')
-        user=authenticate(request,username=username,password=pass1)
-        if user is not None:
-            login(request,user)
-            return redirect('home')
-        else:
-            return HttpResponse ("Username or Password is incorrect!!!")
-            print 
+class Student(models.Model):
+    student_name = models.CharField(max_length=50)
+    student_point = models.IntegerField(null=True)
+    student_passport = models.CharField(max_length=10)
+    student_participation_status = models.CharField(max_length=50)
+    student_mac_address = models.CharField(max_length=50)
 
-    return render (request,'login.html')
+class Trash(models.Model):
+    trash_type = models.CharField(max_length=50)
+    trash_point = models.IntegerField()
 
-def homePage(request):
-    return render(request, 'home.html')
+class Student_Trash(models.Model):
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
+    trash_id = models.ForeignKey('software_design.Trash', Trash)
+    timestamp = models.DateField()
 
-def logoutPage(request):
-    return redner(request, 'logout.html')
+class Staff(models.Model):
+    staff_name = models.CharField(max_length = 50)
+    staff_password = models.CharField(max_length = 50)
 
-def studentApi(request):
-    if request.method =='GET':
-        student = Student.objects.all()
-        student_serializer = StudentSerializer(student, many=True)
-        return JsonResponse(student_serializer.data, safe=False)
+class Case_Management(models.Model):
+    student_trash_id = models.ForeignKey('software_design.Student_Trash', on_delete = models.CASCADE)
+    staff_id = models.ForeignKey('software_design.Staff', on_delete = models.CASCADE)
+    action = models.CharField(max_length = 50)
 
-# Create your views here.
+class Reward_History(models.Model):
+    reward_amount = models.IntegerField()
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
+    date_earned = models.DateField()
+
+class Sender(models.Model):
+     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
+     transfer_point = models.IntegerField()
+
+class Reciever(models.Model):
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
+    transfer_point = models.IntegerField()
+    sender_if = models.ForeignKey('software_design.Sender', on_delete = models.CASCADE)
+    
+# Create    /   Insert  /   Add - POST
+# Retrieve  /   Fetch - GET
+# Update    / Edit - PUT
+# Delete    / Remove - DELETE
