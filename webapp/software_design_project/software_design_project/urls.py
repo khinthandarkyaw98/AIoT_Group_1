@@ -21,5 +21,8 @@ from software_design import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include(router.urls)),
-    path('',views.homePage)
+    path('home/',views.homePage,name='home'),
+    path('logout/',views.logoutPage),
+    path('studentApi/',views.studentApi,name='studentApi'),
+    path('',views.loginPage)
 ]
