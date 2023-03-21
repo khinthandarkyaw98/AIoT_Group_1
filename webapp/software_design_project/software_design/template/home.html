@@ -58,8 +58,14 @@
     <div class="col-12 mt-3 mb-1">
       <h4 class="text-uppercase">TAIST-Tokyo Tech</h4>
       <p>Artificial Intelligence and Internet of Things #3</p>
+      <button type="button" class="btn btn-success" id="student_logout">Logout</button>
     </div>
   </div>
   {% endfor %}
   {% endblock %}
 
+  <script>
+    document.getElementById("student_logout").onclick = function () {
+        location.href = "/";
+    };
+</script>
