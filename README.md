@@ -31,7 +31,6 @@
    * Scenario: **individual POINTS query**, given **he/she is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
    * Scenario: **POINTS Transfer**, given **student A transfers POINTS to student B's account**, when **POINTS are transfered**, then **student A's POINTS will be transfered & reduced**.
    * Scenario: **POINTS Receive**, given **student A transfers POINTS to student B's account**, when **POINTS are received**, then **student B will receive POINTS & POINTS will be added**.
-![image](https://user-images.githubusercontent.com/126539280/226505433-ad01f116-0559-49cf-81f4-3846a0185631.png)
 
 
 ## Impacts of the project
