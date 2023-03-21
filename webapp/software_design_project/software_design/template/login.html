@@ -74,7 +74,7 @@ form *{
 form h3{
     font-size: 32px;
     font-weight: 500;
-    line-height: 42px;
+    line-height: 10px;
     text-align: center;
 }
 
@@ -143,14 +143,21 @@ button{
     <form method="post">
         <h3>Login Here</h3>
         {% csrf_token %} 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Enter Username" id="username" name="username">
+        <label for="student_id">Student ID</label>
+        <input type="text" placeholder="Enter Student ID" id="student_id" name="student_id">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" name="password">
 
         <button type="submit">Log In</button>
+        <button type="button" id="admin_login">Admin Login</button>
         
     </form>
 </body>
+<script>
+    document.getElementById("admin_login").onclick = function () {
+        location.href = "/admin/";
+    };
+</script>
+
 </html>
