@@ -27,8 +27,12 @@
    * For example, given **students have 50 POINTS**, when **they came to cash out**, then **1 bottle of water is given**.
    * Scenario: **Cashed Out**, given **students have cashed out**, when **the reward is given**, then **the POINTS will be used**.
    
-3. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**.
-   * Scenario: **individual POINTS query**, given **student is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
+3. As a **student**, I want to **see how many POINTS I have collected** so that **I can decide to cash out**. I want to **exchange POINTS** with my friends.
+   * Scenario: **individual POINTS query**, given **he/she is in the database**, when **POINTS are queried**, then **POINTS of that student is responsed**.
+   * Scenario: **POINTS Transfer**, given **student A transfers POINTS to student B's account**, when **POINTS are transfered**, then **student A's POINTS will be transfered & reduced**.
+   * Scenario: **POINTS Receive**, given **student A transfers POINTS to student B's account**, when **POINTS are received**, then **student B will receive POINTS & POINTS will be added**.
+![image](https://user-images.githubusercontent.com/126539280/226505433-ad01f116-0559-49cf-81f4-3846a0185631.png)
+
 
 ## Impacts of the project
 By proceeding this project, we can acquire the following impacts:
