@@ -44,14 +44,19 @@ By proceeding this project, we can acquire the following impacts:
 ## Software architecture and behaviors
 ### US1 tag&object_detection
 Software system consists of three software stacks for **BLE scanner & RaspberryPi**, **tag collector & object detector**, and **mobile UI**.
+
 ![IoT software stack](image/stack_diagram.png)
 
 For the hardware sequence diagram, the **BLE scanner will scan MAC addresses**, the **RaspberryPiCamera will detect objects**, and **MQTT will send MAC addresses and corresponding POINTS** to the server.
+
 ![IoT software stack](image/hw_sequence_diagram.png)
 
-For the software sequence diagram, the **Web app scans the student's phone MAC address**, **Requests an account creation with it on the cloud server**, and **Validates the student's data in the database**, then **Responds the request step by step** to the student. 
+For the software sequence diagram, the **Web app scans the student's phone MAC address**, **Requests an account creation with it on the cloud server**, and **Validates the student's data in the database**, then **Responds the request step by step** to the student.
+
 ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/sw_sequence_diagram%20_2.png)
-###Web Application
+
+### Web Application
+
 The implementation of this system involves several components, such as web architecture, web services, APIs, and MQTT brokers. 
 1. **System Requirements**
    * Web Server: pythonanywhere (https://softwaregroup1.pythonanywhere.com)
@@ -59,6 +64,7 @@ The implementation of this system involves several components, such as web archi
    * Web Framework: Django version 4.1.7
    * Front-end Framework: Bootstrap5, JavaScript ES6
    * Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+   
  ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/systemreq.png)
    
 2. **Web Architecture**
@@ -67,6 +73,7 @@ The implementation of this system involves several components, such as web archi
    * Application Layer: The server-side logic responsible for processing user requests, managing data, and interacting with external services. This layer is built  
      using a web development framework that is Django.
    * Data Layer: The database server that stores all the necessary data, such as staff activities,student information, recycling data, and reward points.
+   
  ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/archi.png)
 
 3. **Web Services**
@@ -74,6 +81,7 @@ The implementation of this system involves several components, such as web archi
      data exchange in a standardized format (usually JSON) and allow for easy integration of third-party services.
    * MQTT Broker: An MQTT broker is used to manage the real-time communication between IoT devices (e.g., recycling bins) and the web application. The broker receives 
      data from the devices and publishes it to the appropriate topics, enabling the web application to consume and process the data efficiently.
+     
   ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/api.png)
 
 
