@@ -4,10 +4,15 @@ from django.db import models
 
 class Student(models.Model):
     student_name = models.CharField(max_length=50)
+    student_id = models.IntegerField(unique=True)
     student_point = models.IntegerField(null=True)
     student_passport = models.CharField(max_length=10)
     student_participation_status = models.CharField(max_length=50)
     student_mac_address = models.CharField(max_length=50)
+
+class Mac_point(models.Model):
+    new_mac_address = models.CharField(max_length=50)
+    new_point = models.IntegerField(null=True)
 
 class Trash(models.Model):
     trash_type = models.CharField(max_length=50)
