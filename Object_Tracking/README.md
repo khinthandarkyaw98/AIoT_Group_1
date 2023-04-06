@@ -48,4 +48,4 @@ python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 
 
 The below video is the result of object tracking
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://[youtu.be/vt5fpE0bzSY)](https://www.youtube.com/watch?v=Lb0MiLoGIBI&ab_channel=Floppy)
