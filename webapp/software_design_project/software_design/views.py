@@ -32,6 +32,7 @@ def loginPage(request):
                     stu.save()  # save the updated student object
                     mac_obj.delete()  # delete the Mac_point instance
 
+        # Authenticate student login.            
         for stu in student:
             if stu.student_passport == pass1:
                 context = {'students': student}
