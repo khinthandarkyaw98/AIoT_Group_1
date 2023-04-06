@@ -67,6 +67,7 @@ The implementation of this system involves several components, such as web archi
    * Application Layer: The server-side logic responsible for processing user requests, managing data, and interacting with external services. This layer is built  
      using a web development framework that is Django.
    * Data Layer: The database server that stores all the necessary data, such as staff activities,student information, recycling data, and reward points.
+ ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/archi.mp4)
 
 3. **Web Services**
    * API (Application Programming Interface): DjangoRESTful APIs are used to enable communication between the front-end and back-end systems. These APIs facilitate 
