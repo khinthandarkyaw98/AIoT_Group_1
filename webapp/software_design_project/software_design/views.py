@@ -62,7 +62,8 @@ def studentApi(request):
         student = Student.objects.all()
         student_serializer = StudentSerializer(student, many=True)
         return JsonResponse(student_serializer.data, safe=False)
-    
+
+# Signal receiver function for post_save event of Student model.
 @receiver(post_save, sender=Student)
 def retrieve_student_data(sender, instance, created, **kwargs):
     if created:
