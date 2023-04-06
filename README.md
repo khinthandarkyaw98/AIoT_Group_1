@@ -59,6 +59,19 @@ The implementation of this system involves several components, such as web archi
    * Web Framework: Django version 4.1.7
    * Front-end Framework: Bootstrap5, JavaScript ES6
    * Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+   
+2. **Web Architecture**
+   We uses a three-tier architecture consisting of the following components:
+  * Presentation Layer: The front-end user interface, built using a front-end framework to provide a responsive and interactive experience.
+  * Application Layer: The server-side logic responsible for processing user requests, managing data, and interacting with external services. This layer is built  
+    using a web development framework that is Django.
+  * Data Layer: The database server that stores all the necessary data, such as staff activities,student information, recycling data, and reward points.
+
+3. **Web Services**
+   * API (Application Programming Interface): DjangoRESTful APIs are used to enable communication between the front-end and back-end systems. These APIs facilitate 
+     data exchange in a standardized format (usually JSON) and allow for easy integration of third-party services.
+   * MQTT Broker: An MQTT broker is used to manage the real-time communication between IoT devices (e.g., recycling bins) and the web application. The broker receives 
+     data from the devices and publishes it to the appropriate topics, enabling the web application to consume and process the data efficiently.
 
 
 ### Members
