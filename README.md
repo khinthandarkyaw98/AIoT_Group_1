@@ -113,11 +113,6 @@ The implementation of this system involves several components, such as web archi
 3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
 4. Case study: MarTech using BLE beacon.
 
-
-## System Overview
-![System Overview](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/SystemOverview.png)
-
-
 ## System requirements
 ### Things layer:
 
