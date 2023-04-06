@@ -14,8 +14,8 @@ class Student(models.Model):
 
 # Mac_point model representing MAC address and associated points.
 class Mac_point(models.Model):
-    new_mac_address = models.CharField(max_length=50)
-    new_point = models.IntegerField(null=True)
+    new_mac_address = models.CharField(max_length=50) # MAC address
+    new_point = models.IntegerField(null=True) # Points associated with the MAC address
 
 class Trash(models.Model):
     trash_type = models.CharField(max_length=50)
