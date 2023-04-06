@@ -6,6 +6,10 @@ Bottles and cans tracking implemented with YOLOv4-tiny, DeepSort, and Tensorflow
 small computation device such as raspberry pi 4 and Jetson Nano for detecting image in real-time video. Object detection detect object in one frame at a time, 
 same object in diffrent frame will count as new object for YOLOv4-tiny object detector. To solve this the Deepsort algorithm is used to tracking object which connect object in diffrent frames together.
 
+# DeepSort Algorithm
+
+
+
 # How to Run this code
 
 ## Install the Dependencies
@@ -50,3 +54,5 @@ python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 
 The below video is the result of object tracking
 
 ![Result](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/Object_Tracking/outputs/bottles_cans_tracking.gif)
+
+When ever the bottles or cans pass the green box the system will start counting them. The system will record the ID of each object so that it wont duplicate the object.
