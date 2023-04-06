@@ -54,11 +54,11 @@ For the software sequence diagram, the **Web app scans the student's phone MAC a
 ###Web Application
 The implementation of this system involves several components, such as web architecture, web services, APIs, and MQTT brokers. 
 1. **System Requirements**
-   *Web Server: pythonanywhere (https://softwaregroup1.pythonanywhere.com)
-   *Database Server: Sqlite3
-   *Web Framework: Django version 4.1.7
-   *Front-end Framework: Bootstrap5, JavaScript ES6
-   *Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+   * Web Server: pythonanywhere (https://softwaregroup1.pythonanywhere.com)
+   * Database Server: Sqlite3
+   * Web Framework: Django version 4.1.7
+   * Front-end Framework: Bootstrap5, JavaScript ES6
+   * Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
 
 
 ### Members
