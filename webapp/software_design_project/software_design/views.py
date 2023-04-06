@@ -13,6 +13,7 @@ from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.contrib import messages
 
+# Function to handle the login page.
 def loginPage(request):
     if request.method == 'POST':
         stu_id = request.POST.get('student_id')
@@ -20,6 +21,7 @@ def loginPage(request):
         student = Student.objects.filter(student_id=stu_id)
         mac_info = Mac_point.objects.all()
 
+        # Update student points if new MAC address is detected.
         for mac_obj in mac_info:
             new_mac_address = mac_obj.new_mac_address  # replace with the correct field name
             new_point = mac_obj.new_point  # replace with the correct field name
