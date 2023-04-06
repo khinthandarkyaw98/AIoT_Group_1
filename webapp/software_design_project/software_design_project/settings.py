@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-$bim%mnam8$4#iwellcmovv3(v27ci!0b73u@=fzc%546=q9kb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+APPEND_SLASH = True
+
 
 
 # Application definition
@@ -78,7 +81,7 @@ WSGI_APPLICATION = 'software_design_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'restfulapiDB',
         'USER': 'postgres',
         'PASSWORD': 'root',
@@ -111,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 
@@ -127,3 +130,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_URL = '/'
+
+LOGIN_REDIRECT_URL = '/home/'
+
