@@ -1,6 +1,6 @@
 # Bottles and Cans tracking
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zmeSTP3J5zu2d5fHgsQC06DyYEYJFXq1?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/drive/1wZ_dKPqKXUCNT_bdk5GjUZ8t4IjWFjmB?usp=sharing)
 
 Bottles and cans tracking implemented with YOLOv4-tiny, DeepSort, and Tensorflow. YOLOv4-tiny is the smaller version for YOLOv4, which is suitable for 
 small computation device such as raspberry pi 4 and Jetson Nano for detecting image in real-time video. Object detection detect object in one frame at a time, 
