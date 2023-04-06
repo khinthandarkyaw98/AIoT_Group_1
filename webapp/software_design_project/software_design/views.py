@@ -13,6 +13,7 @@ from django.dispatch import receiver
 from django.db.models.signals import post_save
 from django.contrib import messages
 
+# Function to handle the login page.
 def loginPage(request):
     if request.method == 'POST':
         stu_id = request.POST.get('student_id')
@@ -20,6 +21,7 @@ def loginPage(request):
         student = Student.objects.filter(student_id=stu_id)
         mac_info = Mac_point.objects.all()
 
+        # Update student points if new MAC address is detected.
         for mac_obj in mac_info:
             new_mac_address = mac_obj.new_mac_address  # replace with the correct field name
             new_point = mac_obj.new_point  # replace with the correct field name
@@ -30,6 +32,7 @@ def loginPage(request):
                     stu.save()  # save the updated student object
                     mac_obj.delete()  # delete the Mac_point instance
 
+        # Authenticate student login.            
         for stu in student:
             if stu.student_passport == pass1:
                 context = {'students': student}
@@ -42,8 +45,7 @@ def loginPage(request):
                 return redirect('login.html')
     return render(request, 'login.html')
 
-
-
+# Function to handle the home page.
 def homePage(request):
     if request.method == 'POST':
         receriver = request.POST.get('receiver_id')
@@ -60,7 +62,8 @@ def studentApi(request):
         student = Student.objects.all()
         student_serializer = StudentSerializer(student, many=True)
         return JsonResponse(student_serializer.data, safe=False)
-    
+
+# Signal receiver function for post_save event of Student model.
 @receiver(post_save, sender=Student)
 def retrieve_student_data(sender, instance, created, **kwargs):
     if created:

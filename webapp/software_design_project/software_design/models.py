@@ -1,18 +1,21 @@
 from django.db import models
 
-# Create your models here.
+# Define your models for the application here.
 
+# Student model representing individual students.
 class Student(models.Model):
-    student_name = models.CharField(max_length=50)
-    student_id = models.IntegerField(unique=True)
-    student_point = models.IntegerField(null=True)
-    student_passport = models.CharField(max_length=10)
-    student_participation_status = models.CharField(max_length=50)
-    student_mac_address = models.CharField(max_length=50)
+    student_name = models.CharField(max_length=50) # Name of the student
+    student_id = models.IntegerField(unique=True) # Unique student ID
+    student_point = models.IntegerField(null=True) # Points accumulated by the student
+    student_passport = models.CharField(max_length=10) # Passport information of the student
+    student_participation_status = models.CharField(max_length=50) # Student's participation status
+    student_mac_address = models.CharField(max_length=50) # MAC address of the student's device
 
+
+# Mac_point model representing MAC address and associated points.
 class Mac_point(models.Model):
-    new_mac_address = models.CharField(max_length=50)
-    new_point = models.IntegerField(null=True)
+    new_mac_address = models.CharField(max_length=50) # MAC address
+    new_point = models.IntegerField(null=True) # Points associated with the MAC address
 
 class Trash(models.Model):
     trash_type = models.CharField(max_length=50)
