@@ -4,9 +4,9 @@ from django.db import models
 
 # Student model representing individual students.
 class Student(models.Model):
-    student_name = models.CharField(max_length=50) 
-    student_id = models.IntegerField(unique=True)
-    student_point = models.IntegerField(null=True)
+    student_name = models.CharField(max_length=50) # Name of the student
+    student_id = models.IntegerField(unique=True) # Unique student ID
+    student_point = models.IntegerField(null=True) # Points accumulated by the student
     student_passport = models.CharField(max_length=10)
     student_participation_status = models.CharField(max_length=50)
     student_mac_address = models.CharField(max_length=50)
