@@ -9,4 +9,4 @@ router.register('mac_point', Mac_pointViewset)
 
 # localhost:p/api/student/5
 # GET, POST, UPDATE, DELETE
-# list, re
+# list, retrieve
