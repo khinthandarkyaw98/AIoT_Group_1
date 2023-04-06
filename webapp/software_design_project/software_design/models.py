@@ -12,6 +12,7 @@ class Student(models.Model):
     student_mac_address = models.CharField(max_length=50) # MAC address of the student's device
 
 
+# Mac_point model representing MAC address and associated points.
 class Mac_point(models.Model):
     new_mac_address = models.CharField(max_length=50)
     new_point = models.IntegerField(null=True)
