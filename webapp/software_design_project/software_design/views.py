@@ -45,8 +45,7 @@ def loginPage(request):
                 return redirect('login.html')
     return render(request, 'login.html')
 
-
-
+# Function to handle the home page.
 def homePage(request):
     if request.method == 'POST':
         receriver = request.POST.get('receiver_id')
