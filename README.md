@@ -59,6 +59,7 @@ The implementation of this system involves several components, such as web archi
    * Web Framework: Django version 4.1.7
    * Front-end Framework: Bootstrap5, JavaScript ES6
    * Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+ ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/sw_sequence_diagram%20_2.png)
    
 2. **Web Architecture**
    We uses a three-tier architecture consisting of the following components:
