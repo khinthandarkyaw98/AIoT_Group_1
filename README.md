@@ -51,6 +51,15 @@ For the hardware sequence diagram, the **BLE scanner will scan MAC addresses**, 
 
 For the software sequence diagram, the **Web app scans the student's phone MAC address**, **Requests an account creation with it on the cloud server**, and **Validates the student's data in the database**, then **Responds the request step by step** to the student. 
 ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/sw_sequence_diagram%20_2.png)
+###Web Application
+The implementation of this system involves several components, such as web architecture, web services, APIs, and MQTT brokers. 
+1. **System Requirements**
+   *Web Server: pythonanywhere (https://softwaregroup1.pythonanywhere.com)
+   *Database Server: Sqlite3
+   *Web Framework: Django version 4.1.7
+   *Front-end Framework: Bootstrap5, JavaScript ES6
+   *Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
