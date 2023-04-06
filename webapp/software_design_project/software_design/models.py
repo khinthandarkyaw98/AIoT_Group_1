@@ -22,10 +22,11 @@ class Trash(models.Model):
     trash_type = models.CharField(max_length=50) # Type of trash
     trash_point = models.IntegerField() # Points associated with the trash type
 
+# Student_Trash model representing the trash disposed of by a student.
 class Student_Trash(models.Model):
-    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
-    trash_id = models.ForeignKey('software_design.Trash', Trash)
-    timestamp = models.DateField()
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
+    trash_id = models.ForeignKey('software_design.Trash', Trash) # Foreign key to Trash model
+    timestamp = models.DateField() # Date of the trash disposal
 
 class Staff(models.Model):
     staff_name = models.CharField(max_length = 50)
