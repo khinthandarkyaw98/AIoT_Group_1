@@ -50,7 +50,7 @@ For the hardware sequence diagram, the **BLE scanner will scan MAC addresses**, 
 ![IoT software stack](image/hw_sequence_diagram.png)
 
 For the software sequence diagram, the **Web app scans the student's phone MAC address**, **Requests an account creation with it on the cloud server**, and **Validates the student's data in the database**, then **Responds the request step by step** to the student. 
-![IoT software stack](image/sw_sequence_diagram _2.png)
+![IoT software stack](image/sw_sequence_diagram_2.png)
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
