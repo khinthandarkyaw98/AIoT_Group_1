@@ -2,8 +2,9 @@ from django.db import models
 
 # Define your models for the application here.
 
+# Student model representing individual students.
 class Student(models.Model):
-    student_name = models.CharField(max_length=50)
+    student_name = models.CharField(max_length=50) 
     student_id = models.IntegerField(unique=True)
     student_point = models.IntegerField(null=True)
     student_passport = models.CharField(max_length=10)
