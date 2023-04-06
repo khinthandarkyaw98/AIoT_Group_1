@@ -48,4 +48,4 @@ python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 
 
 The below video is the result of object tracking
 
-<p align="center"><img src="AIoT_Group_1/Object_Tracking/outputs/bottles_cans_tracking.gif"\></p>
+![Result](Object_Tracking/outputs/bottles_cans_tracking.gif)
