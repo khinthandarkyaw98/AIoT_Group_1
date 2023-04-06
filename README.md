@@ -51,6 +51,31 @@ For the hardware sequence diagram, the **BLE scanner will scan MAC addresses**, 
 
 For the software sequence diagram, the **Web app scans the student's phone MAC address**, **Requests an account creation with it on the cloud server**, and **Validates the student's data in the database**, then **Responds the request step by step** to the student. 
 ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/sw_sequence_diagram%20_2.png)
+###Web Application
+The implementation of this system involves several components, such as web architecture, web services, APIs, and MQTT brokers. 
+1. **System Requirements**
+   * Web Server: pythonanywhere (https://softwaregroup1.pythonanywhere.com)
+   * Database Server: Sqlite3
+   * Web Framework: Django version 4.1.7
+   * Front-end Framework: Bootstrap5, JavaScript ES6
+   * Supported Browsers: Google Chrome, Mozilla Firefox, and Microsoft Edge to ensure compatibility.
+ ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/systemreq.png)
+   
+2. **Web Architecture**
+   We uses a three-tier architecture consisting of the following components:
+   * Presentation Layer: The front-end user interface, built using a front-end framework to provide a responsive and interactive experience.
+   * Application Layer: The server-side logic responsible for processing user requests, managing data, and interacting with external services. This layer is built  
+     using a web development framework that is Django.
+   * Data Layer: The database server that stores all the necessary data, such as staff activities,student information, recycling data, and reward points.
+ ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/archi.png)
+
+3. **Web Services**
+   * API (Application Programming Interface): DjangoRESTful APIs are used to enable communication between the front-end and back-end systems. These APIs facilitate 
+     data exchange in a standardized format (usually JSON) and allow for easy integration of third-party services.
+   * MQTT Broker: An MQTT broker is used to manage the real-time communication between IoT devices (e.g., recycling bins) and the web application. The broker receives 
+     data from the devices and publishes it to the appropriate topics, enabling the web application to consume and process the data efficiently.
+  ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/api.png)
+
 
 ### Members
 1. Limhourlaurent Meam (limhourlaurent.meam@dome.tu.ac.th)
@@ -90,11 +115,6 @@ For the software sequence diagram, the **Web app scans the student's phone MAC a
    * Practices: P1(embedded programming/BLE programming), P2(state machine coding/RTOS programming), P3(), P4(), P6(), P7(), P8(), P9(), P10().
 3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
 4. Case study: MarTech using BLE beacon.
-
-
-## System Overview
-![System Overview](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/SystemOverview.png)
-
 
 ## System requirements
 ### Things layer:
