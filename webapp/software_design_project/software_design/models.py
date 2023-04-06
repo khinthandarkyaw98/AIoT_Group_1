@@ -17,9 +17,10 @@ class Mac_point(models.Model):
     new_mac_address = models.CharField(max_length=50) # MAC address
     new_point = models.IntegerField(null=True) # Points associated with the MAC address
 
+# Trash model representing different types of trash and their points.
 class Trash(models.Model):
-    trash_type = models.CharField(max_length=50)
-    trash_point = models.IntegerField()
+    trash_type = models.CharField(max_length=50) # Type of trash
+    trash_point = models.IntegerField() # Points associated with the trash type
 
 class Student_Trash(models.Model):
     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
