@@ -74,6 +74,7 @@ The implementation of this system involves several components, such as web archi
      data exchange in a standardized format (usually JSON) and allow for easy integration of third-party services.
    * MQTT Broker: An MQTT broker is used to manage the real-time communication between IoT devices (e.g., recycling bins) and the web application. The broker receives 
      data from the devices and publishes it to the appropriate topics, enabling the web application to consume and process the data efficiently.
+  ![IoT software stack](https://github.com/khinthandarkyaw98/AIoT_Group_1/blob/main/image/api.png)
 
 
 ### Members
