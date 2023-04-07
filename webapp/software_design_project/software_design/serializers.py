@@ -19,7 +19,9 @@ class Mac_point(serializers.ModelSerializer):
         model = Mac_point # Specify the model to be serialized
         fields = ('__all__') # Serialize all fields of the model
 
+        
+# StaffSerializer for serializing/deserializing Staff model data.
 class StaffSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Staff
-        fields = ('__all__')
+        model = Staff # Specify the model to be serialized
+        fields = ('__all__') # Serialize all fields of the model
