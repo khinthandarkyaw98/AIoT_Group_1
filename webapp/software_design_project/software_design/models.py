@@ -45,9 +45,10 @@ class Reward_History(models.Model):
     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
     date_earned = models.DateField() # Date the reward was earned
 
+# Sender model for managing point transfers.
 class Sender(models.Model):
-     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
-     transfer_point = models.IntegerField()
+     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
+     transfer_point = models.IntegerField() # Points being transferred
 
 class Reciever(models.Model):
     student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
