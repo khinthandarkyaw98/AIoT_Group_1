@@ -124,31 +124,3 @@ The implementation of this system involves several components, such as web archi
 3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
 4. Case study: MarTech using BLE beacon.
 
-## System requirements
-### Things layer:
-
-### Gateway layer:
-
-### Server layer:
-
-### Service layer:
-
-### UI layer:
-
-## Software architecture
-### ESP32 tag:
-
-### ESP32 scanner:
-
-### LINE bot:
-
-### AI:
-
-### LIFF UI: 
-
-## Software implementation
-### Firmware development
-
-### LINE bot development
-
-### LIFF UI development
