@@ -51,15 +51,21 @@ def subscribe(client: mqtt_client):
      client.subscribe(pub_topic_data)
      client.on_message = on_message
 
+        
+# Main function to initiate MQTT connection and perform actions.
 def run():
      client = connect_mqtt()
      subscribe(client)
 #     client.loop_forever()
 
+
+# Overloaded run function to support publish operations.
 def run(method='POST'):
     client = connect_mqtt()
     client.loop_start()
     publish(client, method)
 
+
+# Run the script if executed as a standalone program.
 if __name__ == '__main__':
     run()
