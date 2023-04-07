@@ -1,4 +1,8 @@
 ### Object Detection
+
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1wZ_dKPqKXUCNT_bdk5GjUZ8t4IjWFjmB?usp=sharing)
+
 <hr>
 <p>Object detection is a computer vision task that involves identifying objects within an image or video stream and classifying them into predefined categories. YOLO (You Only Look Once) is an efficient real-time object detection algorithm that can detect multiple objects in an image with high accuracy and speed. YOLO uses a single neural network to simultaneously predict bounding boxes and class probabilities for each object in an image, which makes it faster and more accurate than other object detection algorithms. The YOLO algorithm divides the input image into a grid of cells and predicts the bounding box and class probabilities for each cell. The predicted bounding boxes are then refined using non-maximum suppression to eliminate duplicate detections. YOLO has become a popular choice for object detection in real-world applications such as autonomous driving, surveillance, and robotics.</p>
 <strong>Reasons of using YOLO v4</strong>
