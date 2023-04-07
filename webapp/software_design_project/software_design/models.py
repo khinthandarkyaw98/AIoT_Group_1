@@ -50,11 +50,14 @@ class Sender(models.Model):
      student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
      transfer_point = models.IntegerField() # Points being transferred
 
+# Reciever model for managing received point transfers.
 class Reciever(models.Model):
-    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
-    transfer_point = models.IntegerField()
-    sender_if = models.ForeignKey('software_design.Sender', on_delete = models.CASCADE)
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
+    transfer_point = models.IntegerField() # Points received from the sender
+    sender_if = models.ForeignKey('software_design.Sender', on_delete = models.CASCADE) # Foreign key to Sender model
     
+    
+# CRUD operation comments    
 # Create    /   Insert  /   Add - POST
 # Retrieve  /   Fetch - GET
 # Update    / Edit - PUT
