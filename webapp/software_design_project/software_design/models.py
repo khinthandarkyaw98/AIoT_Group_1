@@ -29,8 +29,8 @@ class Student_Trash(models.Model):
     timestamp = models.DateField() # Date of the trash disposal
 
 class Staff(models.Model):
-    staff_name = models.CharField(max_length = 50)
-    staff_password = models.CharField(max_length = 50)
+    staff_name = models.CharField(max_length = 50) # Name of the staff member
+    staff_password = models.CharField(max_length = 50) # Password for the staff member
 
 class Case_Management(models.Model):
     student_trash_id = models.ForeignKey('software_design.Student_Trash', on_delete = models.CASCADE)
