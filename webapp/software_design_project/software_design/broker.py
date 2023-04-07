@@ -6,10 +6,13 @@ from software_design.serializers import StudentSerializer
 from django.shortcuts import render, HttpResponse, redirect
 from django.conf import settings
 
+# MQTT broker and port configuration.
 broker = 'broker.hivemq.com'
 port = 1883
 pub_topic_data = "ict720/waste_recycling/known_ble_add"
 client_id = f'waste-segregation-{random.randint(0, 1000)}'
+
+# Callback function for successful MQTT connection.
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):
@@ -24,6 +27,7 @@ def connect_mqtt():
     client.connect(broker, port)
     return client
 
+# Function to publish messages to MQTT broker.
 def publish(client, method):
     if method == 'POST':
         student_mac_address = Student.objects.all().values_list('student_mac_address', flat=True)
@@ -38,7 +42,8 @@ def publish(client, method):
         else:
             print(f"Failed to send message to topic {pub_topic_data}")
             return False
-        
+
+# Function to subscribe to topics and handle received messages.
 def subscribe(client: mqtt_client):
      def on_message(client, userdata, msg):
          print(f"Received {msg.payload.decode()} from {msg.topic} topic")
