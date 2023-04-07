@@ -28,6 +28,7 @@ class Student_Trash(models.Model):
     trash_id = models.ForeignKey('software_design.Trash', Trash) # Foreign key to Trash model
     timestamp = models.DateField() # Date of the trash disposal
 
+ # Staff model representing the staff members.
 class Staff(models.Model):
     staff_name = models.CharField(max_length = 50) # Name of the staff member
     staff_password = models.CharField(max_length = 50) # Password for the staff member
