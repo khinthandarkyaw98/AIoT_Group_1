@@ -124,6 +124,8 @@ The implementation of this system involves several components, such as web archi
 3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
 4. Case study: MarTech using BLE beacon.
 
+### Video Result
+<hr>
 [![Alt Text](https://img.youtube.com/vi/-QDfDo1PPpM/0.jpg)](https://www.youtube.com/watch?v=-QDfDo1PPpM)
 
 
