@@ -33,10 +33,11 @@ class Staff(models.Model):
     staff_name = models.CharField(max_length = 50) # Name of the staff member
     staff_password = models.CharField(max_length = 50) # Password for the staff member
 
+# Case_Management model for managing reported cases.
 class Case_Management(models.Model):
-    student_trash_id = models.ForeignKey('software_design.Student_Trash', on_delete = models.CASCADE)
-    staff_id = models.ForeignKey('software_design.Staff', on_delete = models.CASCADE)
-    action = models.CharField(max_length = 50)
+    student_trash_id = models.ForeignKey('software_design.Student_Trash', on_delete = models.CASCADE) # Foreign key to Student_Trash model
+    staff_id = models.ForeignKey('software_design.Staff', on_delete = models.CASCADE) # Foreign key to Staff model
+    action = models.CharField(max_length = 50) # Action taken by staff for the case
 
 class Reward_History(models.Model):
     reward_amount = models.IntegerField()
