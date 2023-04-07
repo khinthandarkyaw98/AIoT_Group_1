@@ -37,12 +37,13 @@ class Staff(models.Model):
 class Case_Management(models.Model):
     student_trash_id = models.ForeignKey('software_design.Student_Trash', on_delete = models.CASCADE) # Foreign key to Student_Trash model
     staff_id = models.ForeignKey('software_design.Staff', on_delete = models.CASCADE) # Foreign key to Staff model
-    action = models.CharField(max_length = 50) # Action taken by staff for the case
+    action = models.CharField(max_length = 50) # Action taken by staff for the case 
 
+# Reward_History model for keeping track of rewards earned by students.
 class Reward_History(models.Model):
-    reward_amount = models.IntegerField()
-    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
-    date_earned = models.DateField()
+    reward_amount = models.IntegerField() # Amount of reward earned # Amount of reward earned
+    student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE) # Foreign key to Student model
+    date_earned = models.DateField() # Date the reward was earned
 
 class Sender(models.Model):
      student_id = models.ForeignKey('software_design.Student', on_delete = models.CASCADE)
