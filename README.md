@@ -113,17 +113,6 @@ The implementation of this system involves several components, such as web archi
    * Dual-processor with RP2040
    * LED 135x240
 
-
-## Scope
-1. Concepts: 
-   * Lectures: L1(AIoT architecture), L2(software models), L3(), L4(), L5(), L6(), L7(), L8(), L9(), L10()
-   * Practices: P1(cross-platform development/Bluetooth Low Energy), P2(multi-threading application), P3(), P4(), P6(), P7(), P8(), P9(), P10().
-2. Skills:
-   * Lectures: L1(user story), L2(UML diagram), L3(), L4(), L5(), L6(), L7(), L8(), L9(), L10().
-   * Practices: P1(embedded programming/BLE programming), P2(state machine coding/RTOS programming), P3(), P4(), P6(), P7(), P8(), P9(), P10().
-3. Tools: GitHub, VS Code, Platform.io, HiveMQ, 
-4. Case study: MarTech using BLE beacon.
-
 ### Video Result
 [![Alt Text](https://img.youtube.com/vi/-QDfDo1PPpM/0.jpg)](https://www.youtube.com/watch?v=-QDfDo1PPpM)
 
